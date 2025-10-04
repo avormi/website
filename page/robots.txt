@@ -1,0 +1,21 @@
+# Block everything by default
+User-agent: *
+Disallow: /
+
+# Explicitly block common AI/data crawlers
+User-agent: GPTBot           # OpenAI
+Disallow: /
+
+User-agent: ChatGPT-User     # OpenAI web preview bot
+Disallow: /
+
+User-agent: Google-Extended  # Google AI training/grounding
+Disallow: /
+
+User-agent: CCBot            # Common Crawl
+Disallow: /
+
+User-agent: ClaudeBot        # Anthropic
+Disallow: /
+User-agent: anthropic-ai     # Anthropic alt UA (see their docs)
+Disallow: /
